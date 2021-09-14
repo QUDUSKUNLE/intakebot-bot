@@ -1,0 +1,42 @@
+{
+    "name": "visalaw",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "start-app": "node ./dist/index.js",
+        "start": "npm run build && npm run start-app",
+        "dev": "tsc-watch --onSuccess \"node ./dist/index.js\"",
+        "test": "NODE_ENV=TEST jest src/ --forceExit"
+    },
+    "author": "Qudus Yekeen",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "7.4.5",
+        "@babel/preset-env": "7.6.3",
+        "@babel/preset-typescript": "^7.3.3",
+        "@types/body-parser": "1.17.0",
+        "@types/node": "12.0.10",
+        "@types/supertest": "2.0.8",
+        "babel-jest": "24.8.0",
+        "dotenv": "8.0.0",
+        "jest": "24.8.0",
+        "nodemon": "1.19.1",
+        "ts-node": "8.3.0",
+        "tslint-config-airbnb-base": "0.3.0",
+        "typescript": "3.6.4"
+    },
+    "dependencies": {
+        "@types/dotenv": "6.1.1",
+        "@types/jest": "24.0.21",
+        "@types/joi": "14.3.3",
+        "body-parser": "1.19.0",
+        "express": "4.17.1",
+        "joi": "14.3.1",
+        "supertest": "4.0.2",
+        "ts-jest": "24.1.0",
+        "tsc-watch": "2.2.1",
+        "tslint": "5.18.0"
+    }
+}
